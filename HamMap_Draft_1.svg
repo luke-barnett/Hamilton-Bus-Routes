@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="900.001px" height="1102px" viewBox="3.236 67.686 900.001 1102" enable-background="new 3.236 67.686 900.001 1102"
+	 xml:space="preserve">
+<symbol  id="MajorBusStop" viewBox="-12 -12 24 24">
+	
+		<g id="path2949-4-1_3_" sodipodi:ry="8.5714283" sodipodi:cy="312.66592" sodipodi:type="arc" sodipodi:cx="98.571426" sodipodi:rx="8.5714283">
+		<path fill="#FFFFFF" d="M0-10c-5.511,0-9.997,4.479-10,9.986c-0.001,2.684,1.037,5.194,2.924,7.082
+			C-5.188,8.957-2.678,9.998-0.007,10C5.512,10,9.997,5.521,10,0.016C10.003-5.51,5.52-9.995,0.006-10H0z"/>
+		<path fill="#231F20" d="M0.004,12V8C4.41,8,7.998,4.418,8-0.002C8.002-4.408,4.416-7.996,0-8c-4.409,0-7.998,3.583-8,8.002
+			c-0.001,2.135,0.829,4.143,2.339,5.653S-2.143,7.999,0.003,8L0.004,12 M0.002,12C0,12-0.005,12-0.008,12
+			C-6.635,11.996-12.004,6.624-12,0c0-0.006,0-0.011,0-0.015C-11.996-6.637-6.625-12,0-12c0.002,0,0.005,0,0.007,0
+			C6.635-11.994,12.004-6.623,12,0c0,0.006,0,0.011,0,0.017C11.996,6.636,6.626,12.001,0.002,12L0.002,12z"/>
+	</g>
+</symbol>
+<g id="BG" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:docname="COMP532_map.svg" inkscape:version="0.47 r22583">
+	<defs  display="none">
+		
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" id="perspective2824" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="372.04724 : 350.78739 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2864" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2864-4" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2895" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2895-5" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2926" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2926-0" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2959" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2959-0" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2959-4" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective2959-5" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3015" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3015-4" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3071" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3111" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153-8" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153-6" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153-7" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153-1" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153-5" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153-3" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3153-59" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3238" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3275" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3343" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3373" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3408" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+		
+			<inkscape:perspective  inkscape:vp_x="0 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="1 : 0.5 : 1" id="perspective3432" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="0.5 : 0.33333333 : 1">
+			</inkscape:perspective>
+	</defs>
+	
+		<sodipodi:namedview  pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:zoom="0.7" inkscape:cx="426.4913" inkscape:cy="421.66541" showgrid="false" showborder="true" id="base" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:document-units="px" inkscape:current-layer="layer3" inkscape:showpageshadow="false" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="0" inkscape:window-y="25" inkscape:window-maximized="1">
+		<inkscape:grid  empspacing="5" visible="true" enabled="true" id="grid2850" type="xygrid" snapvisiblegridlinesonly="true">
+			</inkscape:grid>
+	</sodipodi:namedview>
+	<polygon id="rect2847" fill="#007FFF" points="497.347,67.686 513.264,67.686 513.347,1169.687 499.236,1169.687 	"/>
+</g>
+<g id="routes">
+	<path id="r8" fill="none" stroke="#FBCF18" stroke-width="4" d="M405.236,369.687h-100v100h-196v-198l98,98	">
+<title  id="title3329">#8 Line</title>
+	</path>
+	<path id="rOrbitor" fill="none" stroke="#939598" stroke-width="4" d="M55.236,719.687v-200l50-50l50-50v-106v-98l50-46h100l54,50
+		h118h55.999l50,50h22l100-100v100v180l0.002,122v196h101.998l-50,50h-52l-98-98h-18H453.236l-50,50h-98h-200L55.236,719.687z	">
+<title  id="title3303">Orbiter Line</title>
+	</path>
+	<path id="r2" sodipodi:nodetypes="ccccccc" fill="none" stroke="#F58220" stroke-width="4" d="M405.236,370.038v305.648l48,48
+		h151.999l146,146h54.002	">
+<title  id="title3305">#2 Line</title>
+	</path>
+	<path id="r3_1_" sodipodi:nodetypes="ccccccccc" fill="none" stroke="#F1A424" stroke-width="4" d="M397.236,367.687l-48,48v210
+		l-44,44h-100l-100,100v-100v-200V323.894V169.687	">
+<title  id="title3301">#3 Line</title>
+	</path>
+	<path id="r1" fill="none" stroke="#E2E41A" stroke-width="4" d="M401.236,369.687v-100v-100	">
+<title  id="title3309">#1 Line</title>
+	</path>
+	<path id="r4" fill="none" stroke="#5C89C6" stroke-width="4" d="M405.236,369.687v-104h26l48,48h51.999l52,52h20l96-96h-94	">
+<title  id="title3313">#4 Line</title>
+	</path>
+	<path id="r5" fill="none" stroke="#E99BB7" stroke-width="4" d="M409.236,369.687v-100h20l48,48h51.999l52,52h24l100-100	">
+<title  id="title3317">#5 Line</title>
+	</path>
+	<path id="r6" fill="none" stroke="#E86D53" stroke-width="4" d="M403.236,367.687l-50,50v298l-50,50l-100,98v106v100	">
+<title  id="title3321">#6 Line</title>
+	</path>
+	<path id="r7" fill="none" stroke="#7FD2A8" stroke-width="4" d="M407.236,369.687l-50,50v298l-52,52l-98,96v104v100	">
+<title  id="title3325">#7 Line</title>
+	</path>
+	<path id="r9" fill="none" stroke="#AEC230" stroke-width="4" d="M405.203,375.687l-101.967-102l-46,46h-98v102l-48,48h-10v-200h104
+		l100-100	">
+<title  id="title3333">#9 Line</title>
+	</path>
+	<path id="r10" fill="none" stroke="#8B298F" stroke-width="4" d="M401.236,377.687l46,46v198l-46,46v10l50,50h111.999l42,42
+		l200,200	">
+<title  id="title3359">#10 Line</title>
+	</path>
+	<path id="r11" fill="none" stroke="#93C542" stroke-width="4" d="M413.236,369.687v-96h14l48,48h51.999l52,52h126	">
+<title  id="title3363">#11 Line</title>
+	</path>
+	<path id="r13" fill="none" stroke="#CDCF23" stroke-width="4" d="M407.236,377.687l44,44v202l-46,46l46,46h95.999h62l56,56h132	">
+<title  id="title3393">#13 Line</title>
+	</path>
+	<path id="r14" fill="none" stroke="#660000" stroke-width="4" d="M411.236,363.687l52,52v50h142.001h100l95.998-96l-96-96	">
+<title  id="title3448">#14 Line</title>
+	</path>
+	<path id="r15" fill="none" stroke="#00AA4F" stroke-width="4" d="M409.236,367.687l50,50v52h145.999h100l150,150v200l-49.998,50	">
+<title  id="title3452">#15 Line</title>
+	</path>
+	<path id="r17" fill="none" stroke="#E11729" stroke-width="4" d="M405.236,369.687l72-44h48l79.999,80h60l36-36v-100v-100	">
+<title  id="title3456">#16 Line</title>
+	</path>
+	<path id="r17_1_" fill="none" stroke="#E11729" stroke-width="4" d="M405.236,369.687l50,50v206l-44,44l42,42h109.999l42-42h148
+		l52,52l0.002,48	">
+<title  id="title3460">#17 Line</title>
+	</path>
+	<path id="r18" fill="none" stroke="#80D0F5" stroke-width="4" d="M405.236,369.687l-100-100v-100	">
+<title  id="title3464">#18 Line</title>
+	</path>
+	<path id="rCE" fill="none" stroke="#EA6848" stroke-width="4" d="M405.236,363.687l-50-50v-92l-50-46	">
+<title  id="title3468">CE Line</title>
+	</path>
+	<path id="r12" fill="none" stroke="#F0A06D" stroke-width="4" d="M409.236,373.687l-48,48v298l-52,52l-100,98h196	">
+<title  id="title3389">#12 Line</title>
+	</path>
+</g>
+<g id="stops">
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" id="XMLID_1_" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 269.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 169.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 269.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 369.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 369.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 369.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.1648 369.6096)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.2361 469.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.1648 269.6096)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 207.2361 369.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" id="XMLID_2_" x="-12" y="-12" transform="matrix(1 0 0 -1 405.3074 269.6096)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.3074 169.7639)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.1648 169.7639)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 669.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.2361 669.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 569.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.2361 769.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 869.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 769.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 767.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 769.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 869.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 969.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 769.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 669.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 571.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 869.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 969.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 1069.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 669.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 169.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 169.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 269.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 469.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" id="XMLID_3_" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 769.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 669.6868)" overflow="visible"/>
+	
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 469.6868)" overflow="visible"/>
+	
+		<text id="txtPoop" transform="matrix(1 0 0 1 129.2361 493.6868)" display="none" font-family="'MyriadPro-Regular'" font-size="12">Poop</text>
+</g>
+</svg>
