@@ -46,22 +46,22 @@
 	<use xlink:href="#MajorBusStop" x="285" y="85"/>
 	<use xlink:href="#MajorBusStop" x="385" y="85"/>
 	<!-- River -->
-	<use xlink:href="#MajorBusStop" x="585" y="85"/>
+	<!--<use xlink:href="#MajorBusStop" x="585" y="85"/>-->
 	<use xlink:href="#MajorBusStop" x="685" y="85"/>
-	<use xlink:href="#MajorBusStop" x="785" y="85"/>
+	<!--<use xlink:href="#MajorBusStop" x="785" y="85"/>-->
 	<!-- Row 2 -->
 	<use xlink:href="#MajorBusStop" x="85" y="185"/>
-	<use xlink:href="#MajorBusStop" x="185" y="185"/>
+	<!--<use xlink:href="#MajorBusStop" x="185" y="185"/>-->
 	<use xlink:href="#MajorBusStop" x="285" y="185"/>
 	<use xlink:href="#MajorBusStop" x="385" y="185"/>
 	<!-- River -->
 	<use xlink:href="#MajorBusStop" x="585" y="185"/>
 	<use xlink:href="#MajorBusStop" x="685" y="185"/>
-	<use xlink:href="#MajorBusStop" x="785" y="185"/>
+	<!--<use xlink:href="#MajorBusStop" x="785" y="185"/>-->
 	<!-- Row 3 -->
-	<use xlink:href="#MajorBusStop" x="85" y="285"/>
+	<!--<use xlink:href="#MajorBusStop" x="85" y="285"/>-->
 	<use xlink:href="#MajorBusStop" x="185" y="285"/>
-	<use xlink:href="#MajorBusStop" x="285" y="285"/>
+	<!--<use xlink:href="#MajorBusStop" x="285" y="285"/>-->
 	<use xlink:href="#TransportCentre" x="385" y="285"/>
 	<!-- River -->
 	<use xlink:href="#MajorBusStop" x="585" y="285"/>
@@ -69,22 +69,22 @@
 	<use xlink:href="#MajorBusStop" x="785" y="285"/>
 	<!-- Row 4 -->
 	<use xlink:href="#MajorBusStop" x="85" y="385"/>
-	<use xlink:href="#MajorBusStop" x="185" y="385"/>
+	<!--<use xlink:href="#MajorBusStop" x="185" y="385"/>-->
 	<use xlink:href="#MajorBusStop" x="285" y="385"/>
-	<use xlink:href="#MajorBusStop" x="385" y="385"/>
+	<!--<use xlink:href="#MajorBusStop" x="385" y="385"/>-->
 	<!-- River -->
 	<use xlink:href="#MajorBusStop" x="585" y="385"/>
-	<use xlink:href="#MajorBusStop" x="685" y="385"/>
-	<use xlink:href="#MajorBusStop" x="785" y="385"/>
+	<!--<use xlink:href="#MajorBusStop" x="685" y="385"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="785" y="385"/>-->
 	<!-- Row 5 -->
-	<use xlink:href="#MajorBusStop" x="85" y="485"/>
-	<use xlink:href="#MajorBusStop" x="185" y="485"/>
-	<use xlink:href="#MajorBusStop" x="285" y="485"/>
+	<!--<use xlink:href="#MajorBusStop" x="85" y="485"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="185" y="485"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="285" y="485"/>-->
 	<use xlink:href="#MajorBusStop" x="385" y="485"/>
 	<!-- River -->
-	<use xlink:href="#MajorBusStop" x="585" y="485"/>
+	<!--<use xlink:href="#MajorBusStop" x="585" y="485"/>-->
 	<use xlink:href="#MajorBusStop" x="685" y="485"/>
-	<use xlink:href="#MajorBusStop" x="785" y="485"/>
+	<!--<use xlink:href="#MajorBusStop" x="785" y="485"/>-->
 	<!-- Row 6 -->
 	<use xlink:href="#MajorBusStop" x="85" y="585"/>
 	<use xlink:href="#MajorBusStop" x="185" y="585"/>
@@ -92,11 +92,11 @@
 	<use xlink:href="#MajorBusStop" x="385" y="585"/>
 	<!-- River -->
 	<use xlink:href="#MajorBusStop" x="585" y="585"/>
-	<use xlink:href="#MajorBusStop" x="685" y="585"/>
-	<use xlink:href="#MajorBusStop" x="785" y="585"/>
+	<!--<use xlink:href="#MajorBusStop" x="685" y="585"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="785" y="585"/>-->
 	<!-- Row 7 -->
 	<use xlink:href="#MajorBusStop" x="85" y="685"/>
-	<use xlink:href="#MajorBusStop" x="185" y="685"/>
+	<!--<use xlink:href="#MajorBusStop" x="185" y="685"/>-->
 	<use xlink:href="#MajorBusStop" x="285" y="685"/>
 	<use xlink:href="#MajorBusStop" x="385" y="685"/>
 	<!-- River -->
@@ -104,31 +104,31 @@
 	<use xlink:href="#MajorBusStop" x="685" y="685"/>
 	<use xlink:href="#MajorBusStop" x="785" y="685"/>
 	<!-- Row 8 -->
-	<use xlink:href="#MajorBusStop" x="85" y="785"/>
+	<!--<use xlink:href="#MajorBusStop" x="85" y="785"/>-->
 	<use xlink:href="#MajorBusStop" x="185" y="785"/>
-	<use xlink:href="#MajorBusStop" x="285" y="785"/>
+	<!--<use xlink:href="#MajorBusStop" x="285" y="785"/>-->
 	<use xlink:href="#MajorBusStop" x="385" y="785"/>
 	<!-- River -->
-	<use xlink:href="#MajorBusStop" x="585" y="785"/>
-	<use xlink:href="#MajorBusStop" x="685" y="785"/>
+	<!--<use xlink:href="#MajorBusStop" x="585" y="785"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="685" y="785"/>-->
 	<use xlink:href="#MajorBusStop" x="785" y="785"/>
 	<!-- Row 9 -->
-	<use xlink:href="#MajorBusStop" x="85" y="885"/>
+	<!--<use xlink:href="#MajorBusStop" x="85" y="885"/>-->
 	<use xlink:href="#MajorBusStop" x="185" y="885"/>
-	<use xlink:href="#MajorBusStop" x="285" y="885"/>
-	<use xlink:href="#MajorBusStop" x="385" y="885"/>
+	<!--<use xlink:href="#MajorBusStop" x="285" y="885"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="385" y="885"/>-->
 	<!-- River -->
-	<use xlink:href="#MajorBusStop" x="585" y="885"/>
-	<use xlink:href="#MajorBusStop" x="685" y="885"/>
+	<!--<use xlink:href="#MajorBusStop" x="585" y="885"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="685" y="885"/>-->
 	<use xlink:href="#MajorBusStop" x="785" y="885"/>
 	<!-- Row 10 -->
-	<use xlink:href="#MajorBusStop" x="85" y="985"/>
+	<!--<use xlink:href="#MajorBusStop" x="85" y="985"/>-->
 	<use xlink:href="#MajorBusStop" x="185" y="985"/>
-	<use xlink:href="#MajorBusStop" x="285" y="985"/>
-	<use xlink:href="#MajorBusStop" x="385" y="985"/>
+	<!--<use xlink:href="#MajorBusStop" x="285" y="985"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="385" y="985"/>-->
 	<!-- River -->
-	<use xlink:href="#MajorBusStop" x="585" y="985"/>
-	<use xlink:href="#MajorBusStop" x="685" y="985"/>
-	<use xlink:href="#MajorBusStop" x="785" y="985"/>
+	<!--<use xlink:href="#MajorBusStop" x="585" y="985"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="685" y="985"/>-->
+	<!--<use xlink:href="#MajorBusStop" x="785" y="985"/>-->
 </g>
 </svg>
