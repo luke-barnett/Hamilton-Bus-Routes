@@ -17,25 +17,26 @@
 </g>
 <g id="routes" style="fill:none;stroke-width:4;">
 	<!-- Transport Center 400 300 -->
-	<path id="r01" style="stroke:#E2E41A;" d="M 400 300 L 400 100" />
+	<!-- Shift lines by factor of 4 (thinkness) to overcome overlapping lines -->
+	<path id="r01" style="stroke:#E2E41A;" d="M 394 300 L 394 100" />
 	<path id="r02" style="stroke:#F58220;" d="M 400 300 L 400 600 L 450 650 L 600 650 L 750 800 L 800 800" />
 	<path id="r03" style="stroke:#F1A424;" d="M 400 300 L 350 350 L 350 550 L 300 600 L 200 600 L 100 700 L 100 100" />
-	<path id="r04" style="stroke:#5C89C6;" d="M 400 300 L 400 200 L 430 200 L 460 250 L 540 250 L 600 300 L 700 200 L 600 200" />
-	<path id="r05" style="stroke:#E99BB7;" d="M 400 300 L 400 200 L 430 200 L 460 250 L 540 250 L 600 300 L 700 200" />
+	<path id="r04" style="stroke:#5C89C6;" d="M 398 300 L 398 196 L 432 196 L 462 246 L 540 246 L 600 294 L 694 200 L 600 200" />
+	<path id="r05" style="stroke:#E99BB7;" d="M 402 300 L 402 200 L 430 200 L 460 250 L 540 250 L 600 300 L 700 200" />
 	<path id="r06" style="stroke:#E86D53;" d="M 400 300 L 350 350 L 350 650 L 300 700 L 200 800 L 200 1000" />
 	<path id="r07" style="stroke:#7FD2A8;" d="M 400 300 L 350 350 L 350 650 L 300 700 L 200 800 L 200 1000" />
 	<path id="r08" style="stroke:#FBCF18;" d="M 400 300 L 300 300 L 300 400 L 100 400 L 100 200 L 200 300" />
-	<path id="r09" style="stroke:#AEC230;" d="M 400 300 L 300 200 L 250 250 L 150 250 L 150 350 L 100 400 L 100 200 L 200 200 L 300 100" />
+	<path id="r09" style="stroke:#AEC230;" d="M 400 304 L 300 204 L 250 250 L 154 250 L 154 352 L 96 410 L 96 200 L 200 200 L 300 100" />
 	<path id="r10" style="stroke:#8B298F;" d="M 400 300 L 450 350 L 450 550 L 400 600 L 450 650 L 550 650 L 600 700 L 800 900" />
-	<path id="r11" style="stroke:#93C542;" d="M 400 300 L 400 200 L 430 200 L 460 250 L 540 250 L 600 300 L 700 300" />
+	<path id="r11" style="stroke:#93C542;" d="M 406 300 L 406 204 L 428 204 L 458 254 L 540 254 L 600 304 L 700 304" />
 	<path id="r12" style="stroke:#F0A06D;" d="M 400 300 L 350 350 L 350 650 L 300 700 L 200 800 L 400 800" />
 	<path id="r13" style="stroke:#CDCF23;" d="M 400 300 L 450 350 L 450 550 L 400 600 L 450 650 L 600 650 L 660 700 L 700 700 L 800 700" />
 	<path id="r14" style="stroke:#660000;" d="M 400 300 L 450 350 L 450 400 L 600 400 L 700 400 L 800 300 L 700 200" />
 	<path id="r15" style="stroke:#00AA4F;" d="M 400 300 L 450 350 L 450 400 L 700 400 L 850 550 L 850 750 L 800 800" />
-	<path id="r16" style="stroke:#C3A833;" d="M 400 300 L 460 250 L 540 250 L 600 340 L 660 340 L 700 300 L 700 100" />
+	<path id="r16" style="stroke:#C3A833;" d="M 400 300 L 458 258 L 538 258 L 600 330 L 660 330 L 696 300 L 696 100" />
 	<path id="r17" style="stroke:#E11729;" d="M 400 300 L 450 350 L 450 550 L 400 600 L 450 650 L 550 650 L 600 600 L 750 600 L 800 650 L 800 700" />
 	<path id="r18" style="stroke:#80D0F5;" d="M 400 300 L 300 200 L 300 100" />
-	<path id="rCE" style="stroke:#EA6848;" d="M 400 300 L 350 250 L 350 150 L 300 100" />
+	<path id="rCE" style="stroke:#EA6848;" d="M 400 296 L 350 245 L 350 156 L 300 106" />
 	<path id="rOrbitor" style="stroke:#939598;" d="M 200 100 L 300 100 L 350 150 L 540 150 L 580 200 L 600 200 L 700 100 L 700 700 L 800 700 L 750 750 L 700 750 L 600 650 L 450 650 L 400 700 L 100 700 L 50 650 L 50 450 L 150 350 L 150 150 L 200 100" />
 </g>
 <g id="stops">
