@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Hand Edited File to tidy things up -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="3.236 67.687 900.001 1102"
+	 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+<symbol  id="MajorBusStop" viewBox="-12 -12 24 24">
+	<g>
+		<path id="busStopBackground" style="fill:#FFFFFF;" d="M0-10c-5.511,0-9.997,4.48-10,9.986C-10.001,2.67-8.963,5.18-7.076,7.068C-5.188,8.957-2.678,9.998-0.007,10C5.512,10,9.997,5.521,10,0.016C10.003-5.51,5.52-9.995,0.006-10H0z"/>
+		<path id="busStopBorder" style="fill:#000000;" d="M0.004,12V8C4.41,8,7.998,4.418,8-0.002C8.002-4.408,4.416-7.996,0-8c-4.409,0-7.998,3.584-8,8.002c-0.001,2.135,0.829,4.143,2.339,5.653S-2.143,7.998,0.003,8L0.004,12 M0.002,12C0,12-0.005,12-0.008,12C-6.635,11.996-12.004,6.624-12,0c0-0.006,0-0.011,0-0.015C-11.996-6.637-6.625-12,0-12c0.002,0,0.005,0,0.007,0C6.635-11.994,12.004-6.623,12,0c0,0.006,0,0.01,0,0.017C11.996,6.635,6.626,12,0.002,12L0.002,12z"/>
+	</g>
+</symbol>
+<g id="BG">
+	<polygon id="river" style="fill:#007FFF;" points="493.236,67.687 516.204,67.687 516.324,1169.687 495.962,1169.687"/>
+</g>
+<g id="routes" style="fill:none;stroke-width:4;">
+	<path id="r1" style="stroke:#E2E41A;" d="M401.236,369.687v-100v-100" />
+	<path id="r2" style="stroke:#F58220;" d="M405.236,370.038v305.648l48,48h151.999l146,146h54.002	" />
+	<path id="r3" style="stroke:#F1A424;" d="M397.236,367.687l-48,48v210l-44,44h-100l-100,100v-100v-200V323.894V169.687" />
+	<path id="r4" style="stroke:#5C89C6;" d="M405.236,369.687v-104h26l48,48h51.999l52,52h20l96-96h-94" />
+	<path id="r5" style="stroke:#E99BB7;" d="M409.236,369.687v-100h20l48,48h51.999l52,52h24l100-100" />
+	<path id="r6" style="stroke:#E86D53;" d="M403.236,367.687l-50,50v298l-50,50l-100,98v106v100" />
+	<path id="r7" style="stroke:#7FD2A8;" d="M407.236,369.687l-50,50v298l-52,52l-98,96v104v100" />
+	<path id="r8" style="stroke:#FBCF18;" d="M405.236,369.687h-100v100h-196v-198l98,98" />
+	<path id="r9" style="stroke:#AEC230;" d="M405.203,375.687l-101.967-102l-46,46h-98v102l-48,48h-10v-200h104l100-100" />
+	<path id="r10" style="stroke:#8B298F;" d="M401.236,377.687l46,46v198l-46,46v10l50,50h111.999l42,42l200,200" />
+	<path id="r11" style="stroke:#93C542;" d="M413.236,369.687v-96h14l48,48h51.999l52,52h126" />
+	<path id="r12" style="stroke:#F0A06D;" d="M409.236,373.687l-48,48v298l-52,52l-100,98h196" />
+	<path id="r13" style="stroke:#CDCF23;" d="M407.236,377.687l44,44v202l-46,46l46,46h95.999h62l56,56h132" />
+	<path id="r14" style="stroke:#660000;" d="M411.236,363.687l52,52v50h142.001h100l95.998-96l-96-96" />
+	<path id="r15" style="stroke:#00AA4F;" d="M409.236,367.687l50,50v52h145.999h100l150,150v200l-49.998,50" />
+	<path id="r16" style="stroke:#C3A833;" d="M405.236,369.687l72-44h48l79.999,80h60l36-36v-100v-100" />
+	<path id="r17" style="stroke:#E11729;" d="M405.236,369.687l50,50v206l-44,44l42,42h109.999l42-42h148l52,52l0.002,48	" />
+	<path id="r18" style="stroke:#80D0F5;" d="M405.236,369.687l-100-100v-100" />
+	<path id="rCE" style="stroke:#EA6848;" d="M405.236,363.687l-50-50v-92l-50-46" />
+	<path id="rOrbitor" style="stroke:#939598;" d="M55.236,719.687v-200l50-50l50-50v-106v-98l50-46h100l54,50h118h55.999l50,50h22l100-100v100v180l0.002,122v196h101.998l-50,50h-52l-98-98h-18H453.236l-50,50h-98h-200L55.236,719.687z" />
+</g>
+<g id="stops" style="overflow:visible;">
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 269.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 169.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 269.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 369.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 369.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 369.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.1648 369.6096)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.2361 469.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.1648 269.6096)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 207.2361 369.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.3064 269.6096)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.3064 169.7634)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.1648 169.7634)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 669.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.2361 669.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 569.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 305.2361 769.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 869.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 769.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 767.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 769.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 869.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 805.2351 969.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 769.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 669.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 705.2351 571.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 869.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 969.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 1069.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 405.2361 669.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 205.2361 169.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 169.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 269.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 469.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 769.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 105.2361 669.6868)" />
+		<use xlink:href="#MajorBusStop"  width="24" height="24" x="-12" y="-12" transform="matrix(1 0 0 -1 605.2351 469.6868)" />
+</g>
+</svg>
