@@ -21,14 +21,14 @@
 	<path id="r01" style="stroke:#E2E41A;" d="M 394 300 L 394 100" title="Route #1" />
 	<path id="r02" style="stroke:#F58220;" d="M 399 300 L 399 603 L 452 652 L 597 652 L 756 800 L 800 800" title="Route #2" />
 	<path id="r03" style="stroke:#F1A424;" d="M 394 295 L 342 347 L 342 550 L 300 600 L 200 600 L 100 700 L 100 100" title="Route #3" />
-	<path id="r04" style="stroke:#5C89C6;" d="M 398 300 L 398 196 L 432 196 L 462 246 L 540 246 L 600 294 L 694 200 L 600 200" title="Route #4" />
-	<path id="r05" style="stroke:#E99BB7;" d="M 402 300 L 402 200 L 430 200 L 460 250 L 540 250 L 600 300 L 700 200" title="Route #5" />
+	<path id="r04" style="stroke:#5C89C6;" d="M 398 300 L 398 196 L 432 196 L 462 246 L 544 246 L 590 298 L 600 294 L 694 200 L 600 200" title="Route #4" />
+	<path id="r05" style="stroke:#E99BB7;" d="M 402 300 L 402 200 L 430 200 L 460 250 L 542 250 L 586 300 L 600 300 L 700 200" title="Route #5" />
 	<path id="r06" style="stroke:#E86D53;" d="M 400 294 L 346 348 L 346 648 L 296 698 L 196 798 L 196 1000" title="Route #6" />
 	<path id="r07" style="stroke:#7FD2A8;" d="M 400 300 L 350 350 L 350 650 L 300 700 L 200 800 L 200 1000" title="Route #7" />
 	<path id="r08" style="stroke:#FBCF18;" d="M 400 300 L 300 300 L 300 400 L 104 400 L 104 202 L 200 300" title="Route #8" />
 	<path id="r09" style="stroke:#AEC230;" d="M 400 306 L 300 206 L 250 250 L 154 250 L 154 352 L 96 410 L 96 200 L 200 200 L 300 100" title="Route #9" />
 	<path id="r10" style="stroke:#8B298F;" d="M 402 312 L 442 354 L 442 546 L 389 600 L 450 656 L 550 656 L 600 700 L 800 900" title="Route #10" />
-	<path id="r11" style="stroke:#93C542;" d="M 406 300 L 406 204 L 428 204 L 458 254 L 540 254 L 600 304 L 700 304" title="Route #11" />
+	<path id="r11" style="stroke:#93C542;" d="M 406 300 L 406 204 L 428 204 L 458 254 L 540 254 L 584 304 L 600 304 L 700 304" title="Route #11" />
 	<path id="r12" style="stroke:#F0A06D;" d="M 404 300 L 354 352 L 354 652 L 304 702 L 205 800 L 400 800" title="Route #12" />
 	<path id="r13" style="stroke:#CDCF23;" d="M 400 305 L 446 352 L 446 548 L 398 596 L 450 644 L 600 644 L 663 703 L 700 703 L 800 703" title="Route #13" />
 	<path id="r14" style="stroke:#660000;" d="M 405 294 L 458 347 L 458 398 L 600 398 L 700 398 L 800 300 L 700 200" title="Route #14" />
