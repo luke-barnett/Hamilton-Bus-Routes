@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Hand Edited File to tidy things up -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 200 1100 700">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 1100">
 <symbol id="MajorBusStop">
 	<g>
 		<circle cx="15" cy="15" r="12" fill="white" stroke="black" stroke-width="3" />
@@ -19,7 +19,7 @@
 	<!-- Transport Center 400 300 -->
 	<!-- Shift lines by factor of 4 (thinkness) to overcome overlapping lines -->
 	<path id="r01" style="stroke:#E2E41A;" d="M 394 300 L 394 100" title="Route #1" />
-	<path id="r02" style="stroke:#F58220;" d="M 400 300 L 400 600 L 450 650 L 600 650 L 750 800 L 800 800" title="Route #2" />
+	<path id="r02" style="stroke:#F58220;" d="M 399 300 L 399 603 L 452 652 L 597 652 L 756 800 L 800 800" title="Route #2" />
 	<path id="r03" style="stroke:#F1A424;" d="M 394 295 L 342 347 L 342 550 L 300 600 L 200 600 L 100 700 L 100 100" title="Route #3" />
 	<path id="r04" style="stroke:#5C89C6;" d="M 398 300 L 398 196 L 432 196 L 462 246 L 540 246 L 600 294 L 694 200 L 600 200" title="Route #4" />
 	<path id="r05" style="stroke:#E99BB7;" d="M 402 300 L 402 200 L 430 200 L 460 250 L 540 250 L 600 300 L 700 200" title="Route #5" />
@@ -27,17 +27,17 @@
 	<path id="r07" style="stroke:#7FD2A8;" d="M 400 300 L 350 350 L 350 650 L 300 700 L 200 800 L 200 1000" title="Route #7" />
 	<path id="r08" style="stroke:#FBCF18;" d="M 400 300 L 300 300 L 300 400 L 100 400 L 100 200 L 200 300" title="Route #8" />
 	<path id="r09" style="stroke:#AEC230;" d="M 400 306 L 300 206 L 250 250 L 154 250 L 154 352 L 96 410 L 96 200 L 200 200 L 300 100" title="Route #9" />
-	<path id="r10" style="stroke:#8B298F;" d="M 400 300 L 450 350 L 450 550 L 400 600 L 450 650 L 550 650 L 600 700 L 800 900" title="Route #10" />
+	<path id="r10" style="stroke:#8B298F;" d="M 402 312 L 442 354 L 442 546 L 390 598 L 450 656 L 550 656 L 600 700 L 800 900" title="Route #10" />
 	<path id="r11" style="stroke:#93C542;" d="M 406 300 L 406 204 L 428 204 L 458 254 L 540 254 L 600 304 L 700 304" title="Route #11" />
 	<path id="r12" style="stroke:#F0A06D;" d="M 404 300 L 354 352 L 354 652 L 304 702 L 205 800 L 400 800" title="Route #12" />
-	<path id="r13" style="stroke:#CDCF23;" d="M 400 305 L 446 352 L 446 548 L 398 596 L 450 650 L 600 650 L 660 700 L 700 700 L 800 700" title="Route #13" />
+	<path id="r13" style="stroke:#CDCF23;" d="M 400 305 L 446 352 L 446 548 L 398 596 L 450 644 L 600 644 L 663 703 L 700 703 L 800 703" title="Route #13" />
 	<path id="r14" style="stroke:#660000;" d="M 405 294 L 458 347 L 458 398 L 600 398 L 700 398 L 800 300 L 700 200" title="Route #14" />
 	<path id="r15" style="stroke:#00AA4F;" d="M 404 298 L 454 348 L 454 402 L 700 402 L 850 550 L 850 750 L 800 800" title="Route #15" />
 	<path id="r16" style="stroke:#C3A833;" d="M 400 300 L 458 258 L 538 258 L 600 330 L 660 330 L 696 300 L 696 100" title="Route #16" />
-	<path id="r17" style="stroke:#E11729;" d="M 400 300 L 450 350 L 450 550 L 400 600 L 450 650 L 550 650 L 600 600 L 750 600 L 800 650 L 800 700" title="Route #17" />
+	<path id="r17" style="stroke:#E11729;" d="M 400 300 L 450 350 L 450 550 L 404 596 L 452 640 L 550 640 L 600 600 L 750 600 L 800 650 L 800 700" title="Route #17" />
 	<path id="r18" style="stroke:#80D0F5;" d="M 400 300 L 300 200 L 300 100" title="Route #18" />
 	<path id="rCE" style="stroke:#EA6848;" d="M 400 296 L 350 245 L 350 156 L 300 106" title ="Route #CE" />
-	<path id="rOrbiter" style="stroke:#939598;" d="M 200 100 L 300 100 L 350 150 L 540 150 L 580 200 L 600 200 L 700 100 L 700 700 L 800 700 L 750 750 L 700 750 L 600 650 L 450 650 L 400 700 L 100 700 L 50 650 L 50 450 L 150 350 L 150 150 L 200 100" title="Orbiter" />
+	<path id="rOrbiter" style="stroke:#939598;" d="M 200 100 L 300 100 L 350 150 L 540 150 L 580 200 L 600 200 L 700 100 L 700 699 L 800 699 L 750 747 L 704 747 L 598 648 L 450 648 L 400 700 L 100 700 L 50 650 L 50 450 L 150 350 L 150 150 L 200 100" title="Orbiter" />
 </g>
 <g id="stops">
 	<!-- Based on a stop having the dimensions of 15x15 these place them directly in the middle of lines -->
