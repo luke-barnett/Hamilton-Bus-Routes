@@ -4,12 +4,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 1100">
 <symbol id="MajorBusStop">
 	<g>
-		<circle cx="15" cy="15" r="12" fill="white" stroke="black" stroke-width="3" />
+		<circle cx="15" cy="15" r="12" fill="white" stroke="black" stroke-width="4" />
 	</g>
 </symbol>
 <symbol id="TransportCentre">
 	<g>
-		<rect x="3" y="3" width="24" height="24" fill="white" stroke="black" stroke-width="3" />
+		<rect x="3" y="3" width="24" height="24" fill="white" stroke="black" stroke-width="4" />
 	</g>
 </symbol>
 <g id="BG">
@@ -25,9 +25,9 @@
 	<path id="r05" style="stroke:#E99BB7;" d="M 402 300 L 402 200 L 430 200 L 460 250 L 540 250 L 600 300 L 700 200" title="Route #5" />
 	<path id="r06" style="stroke:#E86D53;" d="M 400 294 L 346 348 L 346 648 L 296 698 L 196 798 L 196 1000" title="Route #6" />
 	<path id="r07" style="stroke:#7FD2A8;" d="M 400 300 L 350 350 L 350 650 L 300 700 L 200 800 L 200 1000" title="Route #7" />
-	<path id="r08" style="stroke:#FBCF18;" d="M 400 300 L 300 300 L 300 400 L 100 400 L 100 200 L 200 300" title="Route #8" />
+	<path id="r08" style="stroke:#FBCF18;" d="M 400 300 L 300 300 L 300 400 L 104 400 L 104 202 L 200 300" title="Route #8" />
 	<path id="r09" style="stroke:#AEC230;" d="M 400 306 L 300 206 L 250 250 L 154 250 L 154 352 L 96 410 L 96 200 L 200 200 L 300 100" title="Route #9" />
-	<path id="r10" style="stroke:#8B298F;" d="M 402 312 L 442 354 L 442 546 L 390 598 L 450 656 L 550 656 L 600 700 L 800 900" title="Route #10" />
+	<path id="r10" style="stroke:#8B298F;" d="M 402 312 L 442 354 L 442 546 L 389 600 L 450 656 L 550 656 L 600 700 L 800 900" title="Route #10" />
 	<path id="r11" style="stroke:#93C542;" d="M 406 300 L 406 204 L 428 204 L 458 254 L 540 254 L 600 304 L 700 304" title="Route #11" />
 	<path id="r12" style="stroke:#F0A06D;" d="M 404 300 L 354 352 L 354 652 L 304 702 L 205 800 L 400 800" title="Route #12" />
 	<path id="r13" style="stroke:#CDCF23;" d="M 400 305 L 446 352 L 446 548 L 398 596 L 450 644 L 600 644 L 663 703 L 700 703 L 800 703" title="Route #13" />
