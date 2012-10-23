@@ -2,3 +2,21 @@ svg {
 	width: 100%;
 	height: 1100px;
 }
+
+.stop {
+	stroke-width:4;
+	stroke:black;
+}
+
+.stop:hover {
+	stroke:red;
+}
+
+.route {
+	fill:none;
+	stroke-width:4;
+}
+
+.route:hover {
+	stroke-width:8;
+}
