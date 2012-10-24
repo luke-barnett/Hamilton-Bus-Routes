@@ -64,11 +64,27 @@ var stopDetails =
 ]
 
 function reset(){
+	console.log("reset");
 	$("#sidebar").empty();
 
-	$('path[class="route"]').each(function(){
-		$(this).removeAttr("opacity");
-		$(this).removeAttr("selected");
+	
+	resetRoutes();
+	resetStops();
+	
+}
+
+function resetRoutes(){
+	$('.route').each(function(){
+		var _item = $(this);
+		_item.svg().removeClass("unselected-route");
+		_item.svg().removeClass("selected-route");
+	});
+}
+
+function resetStops(){
+	$('.stop').each(function(){
+		var _item = $(this);
+		_item.svg().removeClass("selected-stop");
 	});
 }
 
@@ -96,25 +112,24 @@ function processStop(itemId){
 }
 
 function initRoutes(){
-	var _routes = $('path[class="route"]');
+	var _routes = $('.route');
 	_routes.each(function(){
 		$(this).click(function(){
 			//Add any functionality on click here
 			var _item = $(this);
-			var _svgItem = _item.svg();
 			
-			if(_svgItem.attr("selected") == undefined){
+			if(_item.svg().hasClass("selected-route")){
+				reset();
+			}else{
 				_routes.each(function(){
-					$(this).attr("opacity", 0.2);
+					$(this).svg().removeClass("selected-route");
+					$(this).svg().addClass("unselected-route")
 				});
 				
-				_svgItem.removeAttr("opacity");
-				_svgItem.attr("selected","true");
-				
+				resetStops();
+				_item.svg().removeClass("unselected-route");
+				_item.svg().addClass("selected-route");
 				processRoute(_item.attr("id"));
-				
-			}else{
-				reset();
 			}
 		});
 	});
@@ -125,14 +140,25 @@ function panVertical(upDirection){
 }
 
 function initStops(){
-	var _stops = $('use[class="stop"]');
+	var _stops = $('.stop');
 	_stops.each(function(){
 		$(this).click(function(){
 			//Add any functionality on click here
 			var _item = $(this);
 			
+			if(_item.svg().hasClass("selected-stop")){
+				reset();
+			}else{
+				_stops.each(function(){
+					$(this).svg().removeClass("selected-stop");
+				});
+				
+				resetRoutes();
+				_item.svg().addClass("selected-stop");
+				processStop(_item.attr("id"));
+			}
 			
-			processStop(_item.attr("id"));
+			
 		});
 	});
 }

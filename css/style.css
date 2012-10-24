@@ -8,7 +8,7 @@ svg {
 	stroke:black;
 }
 
-.stop:hover {
+.stop:hover, .selected-stop {
 	stroke:red;
 }
 
@@ -19,4 +19,8 @@ svg {
 
 .route:hover {
 	stroke-width:8;
+}
+
+.unselected-route {
+	opacity: 0.2;
 }
