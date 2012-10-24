@@ -1,4 +1,4 @@
-var routeDetails = 
+var routeDetails =
 [
 {"id":"route-01","name":"Route 1"},
 {"id":"route-02","name":"Route 2"},
@@ -22,6 +22,20 @@ var routeDetails =
 {"id":"route-OB","name":"Orbitor"}
 ]
 
+var route13Stops =
+[
+{"id":"stop13_1","name":"2 Collingwood St"},
+{"id":"stop13_2","name":"206 Victoria St"},
+{"id":"stop13_3","name":"669 Grey St"},
+{"id":"stop13_4","name":"29 Te Aroha St"},
+{"id":"stop13_5","name":"Opp 92 Te Aroha St"},
+{"id":"stop13_6","name":"108 Peachgrove Rd"},
+{"id":"stop13_7","name":"21 Wilson St"},
+{"id":"stop13_8","name":"Opp 118 Old Farm Rd"},
+{"id":"stop13_9","name":"44 Cameron Rd"},
+{"id":"stop13_10","name":"6 Greensboro St"}
+]
+
 function reset(){
 	$("#sidebar").empty();
 
@@ -35,9 +49,9 @@ function processRoute(itemId){
 	var _item = $.grep(routeDetails, function(obj){
 		return obj.id === itemId;
 	})[0];
-	
+
 	var _sidebar = $("#sidebar");
-	
+
 	_sidebar.empty();
 	_sidebar.append($("<h1>").append(_item.name));
 }
@@ -49,17 +63,17 @@ function initRoutes(){
 			//Add any functionality on click here
 			var _item = $(this);
 			var _svgItem = _item.svg();
-			
+
 			if(_svgItem.attr("selected") == undefined){
 				_routes.each(function(){
 					$(this).attr("opacity", 0.2);
 				});
-				
+
 				_svgItem.removeAttr("opacity");
 				_svgItem.attr("selected","true");
-				
+
 				processRoute(_item.attr("id"));
-				
+
 			}else{
 				reset();
 			}
