@@ -21,7 +21,7 @@
 		<div class="container-fluid hidden-phone">
 			<div class="row-fluid">
 			<div id="map-wrapper" class="span10">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<svg id="map" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<symbol id="MajorBusStop">
 						<g>
 							<circle cx="15" cy="15" r="12" fill="white"/>
@@ -58,43 +58,43 @@
 						<path class="route" id="route-OB" style="stroke:#939598;" d="M 200 100 L 300 100 L 350 150 L 540 150 L 580 200 L 600 200 L 700 100 L 700 699 L 800 699 L 750 747 L 704 747 L 598 648 L 450 648 L 400 700 L 100 700 L 50 650 L 50 450 L 150 350 L 150 150 L 200 100" title="Orbiter" />
 					</g>
 					<g id="stops">
-						<use class="stop" id="stop1" xlink:href="#MajorBusStop" x="85" y="85"/>
-						<use class="stop" id="stop2" xlink:href="#MajorBusStop" x="185" y="85"/>
-						<use class="stop" id="stop3" xlink:href="#MajorBusStop" x="285" y="85"/>
-						<use class="stop" id="stop4" xlink:href="#MajorBusStop" x="385" y="85"/>
-						<use class="stop" id="stop5" xlink:href="#MajorBusStop" x="685" y="85"/>
-						<use class="stop" id="stop6" xlink:href="#MajorBusStop" x="85" y="185"/>
-						<use class="stop" id="stop7" xlink:href="#MajorBusStop" x="285" y="185"/>
-						<use class="stop" id="stop8" xlink:href="#MajorBusStop" x="385" y="185"/>
-						<use class="stop" id="stop9" xlink:href="#MajorBusStop" x="585" y="185"/>
-						<use class="stop" id="stop10" xlink:href="#MajorBusStop" x="685" y="185"/>
-						<use class="stop" id="stop11" xlink:href="#MajorBusStop" x="185" y="285"/>
-						<use class="stop" id="stop12" xlink:href="#TransportCentre" x="385" y="285"/>
-						<use class="stop" id="stop13" xlink:href="#MajorBusStop" x="585" y="285"/>
-						<use class="stop" id="stop14" xlink:href="#MajorBusStop" x="685" y="285"/>
-						<use class="stop" id="stop15" xlink:href="#MajorBusStop" x="785" y="285"/>
-						<use class="stop" id="stop16" xlink:href="#MajorBusStop" x="85" y="385"/>
-						<use class="stop" id="stop17" xlink:href="#MajorBusStop" x="285" y="385"/>
-						<use class="stop" id="stop18" xlink:href="#MajorBusStop" x="585" y="385"/>
-						<use class="stop" id="stop19" xlink:href="#MajorBusStop" x="385" y="485"/>
-						<use class="stop" id="stop20" xlink:href="#MajorBusStop" x="685" y="485"/>
-						<use class="stop" id="stop21" xlink:href="#MajorBusStop" x="85" y="585"/>
-						<use class="stop" id="stop22" xlink:href="#MajorBusStop" x="185" y="585"/>
-						<use class="stop" id="stop23" xlink:href="#MajorBusStop" x="285" y="585"/>
-						<use class="stop" id="stop24" xlink:href="#MajorBusStop" x="385" y="585"/>
-						<use class="stop" id="stop25" xlink:href="#MajorBusStop" x="585" y="585"/>
-						<use class="stop" id="stop26" xlink:href="#MajorBusStop" x="85" y="685"/>
-						<use class="stop" id="stop27" xlink:href="#MajorBusStop" x="285" y="685"/>
-						<use class="stop" id="stop28" xlink:href="#MajorBusStop" x="385" y="685"/>
-						<use class="stop" id="stop29" xlink:href="#MajorBusStop" x="585" y="685"/>
-						<use class="stop" id="stop30" xlink:href="#MajorBusStop" x="685" y="685"/>
-						<use class="stop" id="stop31" xlink:href="#MajorBusStop" x="785" y="685"/>
-						<use class="stop" id="stop32" xlink:href="#MajorBusStop" x="185" y="785"/>
-						<use class="stop" id="stop33" xlink:href="#MajorBusStop" x="385" y="785"/>
-						<use class="stop" id="stop34" xlink:href="#MajorBusStop" x="785" y="785"/>
-						<use class="stop" id="stop35" xlink:href="#MajorBusStop" x="185" y="885"/>
-						<use class="stop" id="stop36" xlink:href="#MajorBusStop" x="785" y="885"/>
-						<use class="stop" id="stop37" xlink:href="#MajorBusStop" x="185" y="985"/>
+						<use class="stop" id="stop-01" xlink:href="#MajorBusStop" x="85" y="85"/>
+						<use class="stop" id="stop-02" xlink:href="#MajorBusStop" x="185" y="85"/>
+						<use class="stop" id="stop-03" xlink:href="#MajorBusStop" x="285" y="85"/>
+						<use class="stop" id="stop-04" xlink:href="#MajorBusStop" x="385" y="85"/>
+						<use class="stop" id="stop-05" xlink:href="#MajorBusStop" x="685" y="85"/>
+						<use class="stop" id="stop-06" xlink:href="#MajorBusStop" x="85" y="185"/>
+						<use class="stop" id="stop-07" xlink:href="#MajorBusStop" x="285" y="185"/>
+						<use class="stop" id="stop-08" xlink:href="#MajorBusStop" x="385" y="185"/>
+						<use class="stop" id="stop-09" xlink:href="#MajorBusStop" x="585" y="185"/>
+						<use class="stop" id="stop-10" xlink:href="#MajorBusStop" x="685" y="185"/>
+						<use class="stop" id="stop-11" xlink:href="#MajorBusStop" x="185" y="285"/>
+						<use class="stop" id="stop-12" xlink:href="#TransportCentre" x="385" y="285"/>
+						<use class="stop" id="stop-13" xlink:href="#MajorBusStop" x="585" y="285"/>
+						<use class="stop" id="stop-14" xlink:href="#MajorBusStop" x="685" y="285"/>
+						<use class="stop" id="stop-15" xlink:href="#MajorBusStop" x="785" y="285"/>
+						<use class="stop" id="stop-16" xlink:href="#MajorBusStop" x="85" y="385"/>
+						<use class="stop" id="stop-17" xlink:href="#MajorBusStop" x="285" y="385"/>
+						<use class="stop" id="stop-18" xlink:href="#MajorBusStop" x="585" y="385"/>
+						<use class="stop" id="stop-19" xlink:href="#MajorBusStop" x="385" y="485"/>
+						<use class="stop" id="stop-20" xlink:href="#MajorBusStop" x="685" y="485"/>
+						<use class="stop" id="stop-21" xlink:href="#MajorBusStop" x="85" y="585"/>
+						<use class="stop" id="stop-22" xlink:href="#MajorBusStop" x="185" y="585"/>
+						<use class="stop" id="stop-23" xlink:href="#MajorBusStop" x="285" y="585"/>
+						<use class="stop" id="stop-24" xlink:href="#MajorBusStop" x="385" y="585"/>
+						<use class="stop" id="stop-25" xlink:href="#MajorBusStop" x="585" y="585"/>
+						<use class="stop" id="stop-26" xlink:href="#MajorBusStop" x="85" y="685"/>
+						<use class="stop" id="stop-27" xlink:href="#MajorBusStop" x="285" y="685"/>
+						<use class="stop" id="stop-28" xlink:href="#MajorBusStop" x="385" y="685"/>
+						<use class="stop" id="stop-29" xlink:href="#MajorBusStop" x="585" y="685"/>
+						<use class="stop" id="stop-30" xlink:href="#MajorBusStop" x="685" y="685"/>
+						<use class="stop" id="stop-31" xlink:href="#MajorBusStop" x="785" y="685"/>
+						<use class="stop" id="stop-32" xlink:href="#MajorBusStop" x="185" y="785"/>
+						<use class="stop" id="stop-33" xlink:href="#MajorBusStop" x="385" y="785"/>
+						<use class="stop" id="stop-34" xlink:href="#MajorBusStop" x="785" y="785"/>
+						<use class="stop" id="stop-35" xlink:href="#MajorBusStop" x="185" y="885"/>
+						<use class="stop" id="stop-36" xlink:href="#MajorBusStop" x="785" y="885"/>
+						<use class="stop" id="stop-37" xlink:href="#MajorBusStop" x="185" y="985"/>
 					</g>
 				</svg>
 			</div>

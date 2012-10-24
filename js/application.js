@@ -22,6 +22,47 @@ var routeDetails =
 {"id":"route-OB","name":"Orbitor"}
 ]
 
+var stopDetails = 
+[
+{"id":"stop-01","name":"Stop 1"},
+{"id":"stop-02","name":"Stop 1"},
+{"id":"stop-03","name":"Stop 1"},
+{"id":"stop-04","name":"Stop 1"},
+{"id":"stop-05","name":"Stop 1"},
+{"id":"stop-06","name":"Stop 1"},
+{"id":"stop-07","name":"Stop 1"},
+{"id":"stop-08","name":"Stop 1"},
+{"id":"stop-09","name":"Stop 1"},
+{"id":"stop-10","name":"Stop 1"},
+{"id":"stop-11","name":"Stop 1"},
+{"id":"stop-12","name":"Stop 1"},
+{"id":"stop-13","name":"Stop 1"},
+{"id":"stop-14","name":"Stop 1"},
+{"id":"stop-15","name":"Stop 1"},
+{"id":"stop-16","name":"Stop 1"},
+{"id":"stop-17","name":"Stop 1"},
+{"id":"stop-18","name":"Stop 1"},
+{"id":"stop-19","name":"Stop 1"},
+{"id":"stop-20","name":"Stop 1"},
+{"id":"stop-21","name":"Stop 1"},
+{"id":"stop-22","name":"Stop 1"},
+{"id":"stop-23","name":"Stop 1"},
+{"id":"stop-24","name":"Stop 1"},
+{"id":"stop-25","name":"Stop 1"},
+{"id":"stop-26","name":"Stop 1"},
+{"id":"stop-27","name":"Stop 1"},
+{"id":"stop-28","name":"Stop 1"},
+{"id":"stop-29","name":"Stop 1"},
+{"id":"stop-30","name":"Stop 1"},
+{"id":"stop-31","name":"Stop 1"},
+{"id":"stop-32","name":"Stop 1"},
+{"id":"stop-33","name":"Stop 1"},
+{"id":"stop-34","name":"Stop 1"},
+{"id":"stop-35","name":"Stop 1"},
+{"id":"stop-36","name":"Stop 1"},
+{"id":"stop-37","name":"Stop 1"}
+]
+
 function reset(){
 	$("#sidebar").empty();
 
@@ -33,6 +74,18 @@ function reset(){
 
 function processRoute(itemId){
 	var _item = $.grep(routeDetails, function(obj){
+		return obj.id === itemId;
+	})[0];
+	
+	var _sidebar = $("#sidebar");
+	
+	_sidebar.empty();
+	_sidebar.append($("<h1>").append(_item.name));
+}
+
+function processStop(itemId){
+	console.log(itemId);
+	var _item = $.grep(stopDetails, function(obj){
 		return obj.id === itemId;
 	})[0];
 	
@@ -67,12 +120,19 @@ function initRoutes(){
 	});
 }
 
+function panVertical(upDirection){
+	var svg = $("map");
+}
+
 function initStops(){
 	var _stops = $('use[class="stop"]');
 	_stops.each(function(){
 		$(this).click(function(){
 			//Add any functionality on click here
 			var _item = $(this);
+			
+			
+			processStop(_item.attr("id"));
 		});
 	});
 }
