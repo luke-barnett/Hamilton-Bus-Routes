@@ -1,3 +1,26 @@
+
+#control-wrapper {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: red;
+}
+
+#control-wrapper button {
+	height: 30px;
+	width: 30px;
+}
+
+#control-pan {
+
+}
+
+#control-zoom {
+
+}
+
+
+
 svg {
 	width: 100%;
 	height: 1100px;

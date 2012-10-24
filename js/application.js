@@ -22,6 +22,8 @@ var routeDetails =
 {"id":"route-OB","name":"Orbitor"}
 ]
 
+var svgMapElement; //Global variable pointing to the SVG map element
+
 function reset(){
 	$("#sidebar").empty();
 
@@ -77,7 +79,63 @@ function initStops(){
 	});
 }
 
+function initSvgVars(){
+	//Set a global variable to point to the svg map.
+	svgMapElement = $('#svg-map')[0];
+	svgMapElement.setAttribute('viewBox', '0 0 300 300');
+}
+
+function initKeyboardListener(){
+
+}
+
+function initMouseListener(){
+
+}
+
+function zoom(step){
+	//Get the viewbox values
+	var viewBoxValues = svgMapElement.getAttribute('viewBox').split(' ');
+
+	//Get the width and height of the viewbox as floats
+	var width = parseFloat(viewBoxValues[2]);		
+	var height = parseFloat(viewBoxValues[3]);
+
+	var value = Math.abs(step);
+
+	if(step < 0){
+		viewBoxValues[2] = width * value;
+		viewBoxValues[3] = height * value;
+	} 
+	else{
+		viewBoxValues[2] = width / value;
+		viewBoxValues[3] = height / value;
+	}
+
+	//Set the attribute to the new values
+      	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+}
+
+function pan(xStep, yStep){
+	//Get the viewbox values
+	var viewBoxValues = svgMapElement.getAttribute('viewBox').split(' ');
+
+	//Get the width and height of the viewbox as floats
+	var x = parseFloat(viewBoxValues[0]);		
+	var y = parseFloat(viewBoxValues[1]);
+
+	viewBoxValues[0] = x + xStep;
+	viewBoxValues[1] = y + yStep;
+
+	//Set the attribute to the new values
+      	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+}
+
 $(document).ready(function() {
 	initStops();
 	initRoutes();
+
+	initSvgVars();
+	initKeyboardListener();
+	initMouseListener();
 });

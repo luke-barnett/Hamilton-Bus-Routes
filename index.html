@@ -20,8 +20,20 @@
 		</div>
 		<div class="container-fluid hidden-phone">
 			<div class="row-fluid">
+			<div id="control-wrapper">
+				<div id="control-pan">
+					<button type="button" onclick="pan(0,-20);"> ^</button>
+					<button type="button" onclick="pan(-20,0);"><</button>
+					<button type="button" onclick="pan(20,0);">></button>
+					<button type="button" onclick="pan(0,20);">v</button>
+				</div>
+				<div id="control-zoom">
+					<button type="button" onclick="zoom(1.2);">+</button>
+					<button type="button" onclick="zoom(-1.2);">-</button>
+				</div>
+			</div>
 			<div id="map-wrapper" class="span10">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<svg id="svg-map" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300px" height="300px" preserveAspectRatio="xMidYMid meet">
 					<symbol id="MajorBusStop">
 						<g>
 							<circle cx="15" cy="15" r="12" fill="white"/>
