@@ -34,6 +34,7 @@ var route13Stops =
 {"id":"stop13_8","name":"Opp 118 Old Farm Rd"},
 {"id":"stop13_9","name":"44 Cameron Rd"},
 {"id":"stop13_10","name":"6 Greensboro St"}
+]
 
 var stopDetails =
 [
@@ -108,6 +109,18 @@ function processStop(itemId){
 	_sidebar.append($("<h1>").append(_item.name));
 }
 
+function processStop(itemId){
+	console.log(itemId);
+	var _item = $.grep(stopDetails, function(obj){
+		return obj.id === itemId;
+	})[0];
+
+	var _sidebar = $("#sidebar");
+
+	_sidebar.empty();
+	_sidebar.append($("<h1>").append(_item.name));
+}
+
 function initRoutes(){
 	var _routes = $('path[class="route"]');
 	_routes.each(function(){
@@ -143,8 +156,6 @@ function initStops(){
 		$(this).click(function(){
 			//Add any functionality on click here
 			var _item = $(this);
-
-
 			processStop(_item.attr("id"));
 		});
 	});
