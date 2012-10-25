@@ -117,18 +117,15 @@
 			</div>
 			<div class="span2">
 				<div id="control-wrapper">
-					<div id="control-pan">
-						<button type="button" onclick="pan(0,-1 * defaultPan);"> ^</button>
-						<button type="button" onclick="pan(-1 * defaultPan,0);"><</button>
-						<button type="button" onclick="pan(defaultPan,0);">></button>
-						<button type="button" onclick="pan(0,defaultPan);">v</button>
-					</div>
-					<div id="control-zoom">
-						<button type="button" onclick="zoom(defaultZoomIn);">+</button>
-						<button type="button" onclick="zoom(defaultZoomOut);">-</button>
-					</div>
+					<button id="pan-up" type="button" onclick="pan(0,-1 * defaultPan);"> ^</button>
+					<button id="pan-left" type="button" onclick="pan(-1 * defaultPan,0);"><</button>
+					<button id="pan-zoom-reset" type="button" onclick="resetPanZoom();">o</button>
+					<button id="pan-right" type="button" onclick="pan(defaultPan,0);">></button>
+					<button id="pan-down" type="button" onclick="pan(0,defaultPan);">v</button>
+					<button id="zoom-in" type="button" onclick="zoom(defaultZoomIn);">+</button>
+					<button id="zoom-out" type="button" onclick="zoom(defaultZoomOut);">-</button>
 				</div>
-				<div id="sidebar" />
+				<div id="sidebar"/>
 			</div>
 			</div>
 		</div>

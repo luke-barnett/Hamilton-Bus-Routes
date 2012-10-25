@@ -95,19 +95,18 @@ var currentZoomLevel = 1;
 var defaultPan = 20;
 var defaultZoomIn = 0.8;
 var defaultZoomOut = 1.25; //Because 1/0.8 = 1.25. Need both of these to be whole fractions so we dont loose precision.
+var defaultViewBoxValue = '0 0 900 1100';
 
 //Mouse panning global vars
-var lastMouseEvent;
+var lastMouseEvent = null;
 var mouseCurrentlyPanning = false;
 
 function reset(){
 	console.log("reset");
 	$("#sidebar").empty();
 
-	
 	resetRoutes();
 	resetStops();
-	
 }
 
 function resetRoutes(){
@@ -227,7 +226,7 @@ function initStops(){
 function initSvgVars(){
 	//Set a global variable to point to the svg map.
 	svgMapElement = $('#svg-map')[0];
-	svgMapElement.setAttribute('viewBox', '0 0 900 1100');
+	svgMapElement.setAttribute('viewBox', defaultViewBoxValue);
 }
 
 function initKeyboardListener(){
@@ -239,11 +238,11 @@ function initMouseListener(){
 	//Add listeners for mouse wheel
 	if(navigator.userAgent.toLowerCase().indexOf('webkit') >= 0){
 		//Chrome/Safari
-		window.addEventListener('mousewheel', handleMouseWheelEvent, false); 
+		svgMapElement.addEventListener('mousewheel', handleMouseWheelEvent, false); 
 	}
 	else{
 		//Others
-		window.addEventListener('DOMMouseScroll', handleMouseWheelEvent, false); 
+		svgMapElement.addEventListener('DOMMouseScroll', handleMouseWheelEvent, false); 
 	}
 	
 	//Add listeners for mouse up/down/move
@@ -292,6 +291,11 @@ function pan(xStep, yStep){
 
 	//Set the attribute to the new values
 	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+}
+
+function resetPanZoom(){
+	svgMapElement.setAttribute('viewBox', defaultViewBoxValue);
+	currentZoomLevel = 1;
 }
 
 function handleKeyEvent(evt){

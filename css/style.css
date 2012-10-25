@@ -1,24 +1,41 @@
 #control-wrapper {
-	width: 100px;
-	height: 100px;
+	float:left;
 }
 
 #control-wrapper button {
 	height: 30px;
 	width: 30px;
+	float:left;
 }
 
-#control-pan {
-
+#pan-up, #pan-down {
+	margin-left:30px;
+	clear:both;
 }
 
-#control-zoom {
-
+#pan-left {
+	clear:both
 }
 
+#zoom-in {
+	margin-top:30px;
+	margin-left:30px;
+	clear:both;
+}
+
+#zoom-out {
+	margin-top:15px;
+	margin-left:30px;
+	clear:both;
+}
+
+#sidebar {
+	float:left;
+	clear:both;
+	margin-top:30px;
+}
+	
 svg {
-	width: 100%;
-	height: 1100px;
 	border: 1px solid;
 }
 
@@ -42,4 +59,8 @@ svg {
 
 .unselected-route {
 	opacity: 0.2;
+}
+
+.clear {
+	clear:both;
 }
