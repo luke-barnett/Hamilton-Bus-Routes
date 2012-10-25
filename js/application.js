@@ -1,4 +1,4 @@
-var routeDetails = 
+var routeDetails =
 [
 {"id":"route-01","name":"Route 1"},
 {"id":"route-02","name":"Route 2"},
@@ -23,13 +23,83 @@ var routeDetails =
 ]
 
 var svgMapElement; //Global variable pointing to the SVG map element
+var route13Stops =
+[
+{"id":"stop13_1","name":"2 Collingwood St"},
+{"id":"stop13_2","name":"206 Victoria St"},
+{"id":"stop13_3","name":"669 Grey St"},
+{"id":"stop13_4","name":"29 Te Aroha St"},
+{"id":"stop13_5","name":"Opp 92 Te Aroha St"},
+{"id":"stop13_6","name":"108 Peachgrove Rd"},
+{"id":"stop13_7","name":"21 Wilson St"},
+{"id":"stop13_8","name":"Opp 118 Old Farm Rd"},
+{"id":"stop13_9","name":"44 Cameron Rd"},
+{"id":"stop13_10","name":"6 Greensboro St"}
+]
+
+var stopDetails =
+[
+{"id":"stop-01","name":"Stop 1"},
+{"id":"stop-02","name":"Stop 2"},
+{"id":"stop-03","name":"Stop 3"},
+{"id":"stop-04","name":"Stop 4"},
+{"id":"stop-05","name":"Stop 5"},
+{"id":"stop-06","name":"Stop 6"},
+{"id":"stop-07","name":"Stop 7"},
+{"id":"stop-08","name":"Stop 8"},
+{"id":"stop-09","name":"Stop 9"},
+{"id":"stop-10","name":"Stop 10"},
+{"id":"stop-11","name":"Stop 11"},
+{"id":"stop-12","name":"Transport Centre"},
+{"id":"stop-13","name":"Stop 13"},
+{"id":"stop-14","name":"Stop 14"},
+{"id":"stop-15","name":"Stop 15"},
+{"id":"stop-16","name":"Stop 16"},
+{"id":"stop-17","name":"Stop 17"},
+{"id":"stop-18","name":"Stop 18"},
+{"id":"stop-19","name":"Stop 19"},
+{"id":"stop-20","name":"Stop 20"},
+{"id":"stop-21","name":"Stop 21"},
+{"id":"stop-22","name":"Stop 22"},
+{"id":"stop-23","name":"Stop 23"},
+{"id":"stop-24","name":"Stop 24"},
+{"id":"stop-25","name":"Stop 25"},
+{"id":"stop-26","name":"Stop 26"},
+{"id":"stop-27","name":"Stop 27"},
+{"id":"stop-28","name":"Stop 28"},
+{"id":"stop-29","name":"Stop 29"},
+{"id":"stop-30","name":"Stop 30"},
+{"id":"stop-31","name":"Stop 31"},
+{"id":"stop-32","name":"Stop 32"},
+{"id":"stop-33","name":"Stop 33"},
+{"id":"stop-34","name":"Stop 34"},
+{"id":"stop-35","name":"Stop 35"},
+{"id":"stop-36","name":"Stop 36"},
+{"id":"stop-37","name":"Stop 37"}
+]
 
 function reset(){
+	console.log("reset");
 	$("#sidebar").empty();
 
-	$('path[class="route"]').each(function(){
-		$(this).removeAttr("opacity");
-		$(this).removeAttr("selected");
+	
+	resetRoutes();
+	resetStops();
+	
+}
+
+function resetRoutes(){
+	$('.route').each(function(){
+		var _item = $(this);
+		_item.svg().removeClass("unselected-route");
+		_item.svg().removeClass("selected-route");
+	});
+}
+
+function resetStops(){
+	$('.stop').each(function(){
+		var _item = $(this);
+		_item.svg().removeClass("selected-stop");
 	});
 }
 
@@ -37,44 +107,85 @@ function processRoute(itemId){
 	var _item = $.grep(routeDetails, function(obj){
 		return obj.id === itemId;
 	})[0];
-	
+
 	var _sidebar = $("#sidebar");
-	
+
+	_sidebar.empty();
+	_sidebar.append($("<h1>").append(_item.name));
+}
+
+function processStop(itemId){
+	console.log(itemId);
+	var _item = $.grep(stopDetails, function(obj){
+		return obj.id === itemId;
+	})[0];
+
+	var _sidebar = $("#sidebar");
+
+	_sidebar.empty();
+	_sidebar.append($("<h1>").append(_item.name));
+}
+
+function processStop(itemId){
+	console.log(itemId);
+	var _item = $.grep(stopDetails, function(obj){
+		return obj.id === itemId;
+	})[0];
+
+	var _sidebar = $("#sidebar");
+
 	_sidebar.empty();
 	_sidebar.append($("<h1>").append(_item.name));
 }
 
 function initRoutes(){
-	var _routes = $('path[class="route"]');
+	var _routes = $('.route');
 	_routes.each(function(){
 		$(this).click(function(){
 			//Add any functionality on click here
 			var _item = $(this);
-			var _svgItem = _item.svg();
 			
-			if(_svgItem.attr("selected") == undefined){
+			if(_item.svg().hasClass("selected-route")){
+				reset();
+			}else{
 				_routes.each(function(){
-					$(this).attr("opacity", 0.2);
+					$(this).svg().removeClass("selected-route");
+					$(this).svg().addClass("unselected-route")
 				});
 				
-				_svgItem.removeAttr("opacity");
-				_svgItem.attr("selected","true");
-				
+				resetStops();
+				_item.svg().removeClass("unselected-route");
+				_item.svg().addClass("selected-route");
 				processRoute(_item.attr("id"));
-				
-			}else{
-				reset();
+
 			}
 		});
 	});
 }
 
+function panVertical(upDirection){
+	var svg = $("map");
+}
+
 function initStops(){
-	var _stops = $('use[class="stop"]');
+	var _stops = $('.stop');
 	_stops.each(function(){
 		$(this).click(function(){
 			//Add any functionality on click here
 			var _item = $(this);
+			
+			if(_item.svg().hasClass("selected-stop")){
+				reset();
+			}else{
+				_stops.each(function(){
+					$(this).svg().removeClass("selected-stop");
+				});
+				
+				resetRoutes();
+				_item.svg().addClass("selected-stop");
+				processStop(_item.attr("id"));
+			}
+			
 		});
 	});
 }
