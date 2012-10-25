@@ -39,43 +39,43 @@ var route13Stops =
 
 var stopDetails =
 [
-{"id":"stop-01","name":"Hamilton Zoo"},
-{"id":"stop-02","name":"Wintec Avalon Drive"},
-{"id":"stop-03","name":"The Base"},
-{"id":"stop-04","name":"Route 1 End"},
-{"id":"stop-05","name":"Rototuna Shops"},
-{"id":"stop-06","name":"Grandview Mall"},
-{"id":"stop-07","name":"Maeroa Intermediate"},
-{"id":"stop-08","name":"Beerscourt"},
-{"id":"stop-09","name":"Flagstaff Shops"},
-{"id":"stop-10","name":"Chartwell Shops"},
-{"id":"stop-11","name":"Route 8 End"},
-{"id":"stop-12","name":"Transport Centre"},
-{"id":"stop-13","name":"Fairfield High School"},
-{"id":"stop-14","name":"St. Pauls"},
-{"id":"stop-15","name":"Fairview Downs"},
-{"id":"stop-16","name":"Stop 16"},
-{"id":"stop-17","name":"Frankton"},
-{"id":"stop-18","name":"Claudelands"},
-{"id":"stop-19","name":"Wintec"},
-{"id":"stop-20","name":"Hamilton Boys High School"},
-{"id":"stop-21","name":"Fraser High School"},
-{"id":"stop-22","name":"Aberdeen Primary"},
-{"id":"stop-23","name":"Frankton Primary"},
-{"id":"stop-24","name":"Hamilton Police Station"},
-{"id":"stop-25","name":"Sacret Heart High School"},
-{"id":"stop-26","name":"Dinsdale Shops"},
-{"id":"stop-27","name":"Hospital"},
-{"id":"stop-28","name":"Stop 28"},
-{"id":"stop-29","name":"Hamilton Gardens"},
-{"id":"stop-30","name":"University of Waikato"},
-{"id":"stop-31","name":"Silverdale Shops"},
-{"id":"stop-32","name":"Melville High School"},
-{"id":"stop-33","name":"Fitzroy Park"},
-{"id":"stop-34","name":"Silverdale Shops"},
-{"id":"stop-35","name":"Glenview Shopping Centre"},
-{"id":"stop-36","name":"Morrinsville Road"},
-{"id":"stop-37","name":"Route 6 End"}
+{"id":"stop-01","name":"Hamilton Zoo","next_arrivals":["Route 3 - 30min (4:50pm)"]},
+{"id":"stop-02","name":"Wintec Avalon Drive","next_arrivals":["Orbitor - 10min (4:30pm)"]},
+{"id":"stop-03","name":"The Base","next_arrivals":[]},
+{"id":"stop-04","name":"Route 1 End","next_arrivals":[]},
+{"id":"stop-05","name":"Rototuna Shops","next_arrivals":[]},
+{"id":"stop-06","name":"Grandview Mall","next_arrivals":[]},
+{"id":"stop-07","name":"Maeroa Intermediate","next_arrivals":[]},
+{"id":"stop-08","name":"Beerscourt","next_arrivals":[]},
+{"id":"stop-09","name":"Flagstaff Shops","next_arrivals":[]},
+{"id":"stop-10","name":"Chartwell Shops","next_arrivals":[]},
+{"id":"stop-11","name":"Route 8 End","next_arrivals":[]},
+{"id":"stop-12","name":"Transport Centre","next_arrivals":[]},
+{"id":"stop-13","name":"Fairfield High School","next_arrivals":[]},
+{"id":"stop-14","name":"St. Pauls","next_arrivals":[]},
+{"id":"stop-15","name":"Fairview Downs","next_arrivals":[]},
+{"id":"stop-16","name":"Stop 16","next_arrivals":[]},
+{"id":"stop-17","name":"Frankton","next_arrivals":[]},
+{"id":"stop-18","name":"Claudelands","next_arrivals":[]},
+{"id":"stop-19","name":"Wintec","next_arrivals":[]},
+{"id":"stop-20","name":"Hamilton Boys High School","next_arrivals":[]},
+{"id":"stop-21","name":"Fraser High School","next_arrivals":[]},
+{"id":"stop-22","name":"Aberdeen Primary","next_arrivals":[]},
+{"id":"stop-23","name":"Frankton Primary","next_arrivals":[]},
+{"id":"stop-24","name":"Hamilton Police Station","next_arrivals":["Route 2 - 23min (4:43pm)","Route 10 - 5min (4:25pm)","Route 13 - 15min (4:35pm)","Route 17 - 27min (4:47pm)"]},
+{"id":"stop-25","name":"Sacret Heart High School","next_arrivals":[]},
+{"id":"stop-26","name":"Dinsdale Shops","next_arrivals":[]},
+{"id":"stop-27","name":"Hospital","next_arrivals":[]},
+{"id":"stop-28","name":"Stop 28","next_arrivals":[]},
+{"id":"stop-29","name":"Hamilton Gardens","next_arrivals":[]},
+{"id":"stop-30","name":"University of Waikato","next_arrivals":["Route 13 - 35min (4:55pm)","Orbitor - 10min (4:30pm)"]},
+{"id":"stop-31","name":"Silverdale Shops","next_arrivals":["Route 13 - 35min (4:55pm)","Route 17 - 20min (4:40pm)","Orbitor - 2min (4:22pm)"]},
+{"id":"stop-32","name":"Melville High School","next_arrivals":[]},
+{"id":"stop-33","name":"Fitzroy Park","next_arrivals":[]},
+{"id":"stop-34","name":"Silverdale Shops","next_arrivals":[]},
+{"id":"stop-35","name":"Glenview Shopping Centre","next_arrivals":[]},
+{"id":"stop-36","name":"Morrinsville Road","next_arrivals":[]},
+{"id":"stop-37","name":"Route 6 End","next_arrivals":[]}
 ]
 
 //KeyCode Constants
@@ -95,7 +95,7 @@ var currentZoomLevel = 1;
 var defaultPan = 20;
 var defaultZoomIn = 0.8;
 var defaultZoomOut = 1.25; //Because 1/0.8 = 1.25. Need both of these to be whole fractions so we dont loose precision.
-var defaultViewBoxValue = '0 0 900 1100';
+var defaultViewBoxValue = '50 80 900 1100';
 
 //Mouse panning global vars
 var lastMouseEvent = null;
@@ -146,6 +146,16 @@ function processStop(itemId){
 	})[0];
 
 	$('#major-name').html(_item.name);
+	$('#minor-name').html("Arrivals");
+	
+	var nextArrivals = "";
+	
+	$.each(_item.next_arrivals, function(index, arrival){
+		nextArrivals += arrival + "</br>";
+	});
+	
+	$('#content').html(nextArrivals);
+	
 }
 
 function processMinorStop(itemId){
