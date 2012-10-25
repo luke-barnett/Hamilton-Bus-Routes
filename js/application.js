@@ -46,7 +46,7 @@ var stopDetails =
 {"id":"stop-05","name":"Rototuna Shops"},
 {"id":"stop-06","name":"Grandview Mall"},
 {"id":"stop-07","name":"Maeroa Intermediate"},
-{"id":"stop-08","name":"PIZZA"},
+{"id":"stop-08","name":"Beerscourt"},
 {"id":"stop-09","name":"Flagstaff Shops"},
 {"id":"stop-10","name":"Chartwell Shops"},
 {"id":"stop-11","name":"Route 8 End"},
@@ -103,7 +103,9 @@ var mouseCurrentlyPanning = false;
 
 function reset(){
 	console.log("reset");
-	$("#sidebar").empty();
+	$('#major-name').html('');
+	$('#minor-name').html('');
+	$('#content').html('');
 
 	resetRoutes();
 	resetStops();
@@ -130,10 +132,7 @@ function processRoute(itemId){
 		return obj.id === itemId;
 	})[0];
 
-	var _sidebar = $("#sidebar");
-
-	_sidebar.empty();
-	_sidebar.append($("<h1>").append(_item.name));
+	$('#major-name').html(_item.name);
 	
 	if(itemId == "route-13"){
 		$("#route13stops").attr("display","all");
@@ -146,10 +145,7 @@ function processStop(itemId){
 		return obj.id === itemId;
 	})[0];
 
-	var _sidebar = $("#sidebar");
-
-	_sidebar.empty();
-	_sidebar.append($("<h1>").append(_item.name));
+	$('#major-name').html(_item.name);
 }
 
 function processMinorStop(itemId){
@@ -157,12 +153,9 @@ function processMinorStop(itemId){
 		return obj.id === itemId;
 	})[0];
 
-	var _sidebar = $("#sidebar");
-
-	_sidebar.empty();
-	_sidebar.append($("<h1>").append("Route 13"));
-	_sidebar.append($("<h3>").append(_item.name));
-	_sidebar.append($("<p>").append("Next arrival in 15mins (5:37pm)"));
+	$('#major-name').html("Route 13");
+	$('#minor-name').html(_item.name);
+	$('#content').html("Next arrival in 15mins (5:37pm)");
 }
 
 function initRoutes(){
@@ -177,10 +170,8 @@ function initRoutes(){
 			}else{
 				reset();
 				_routes.each(function(){
-					$(this).svg().removeClass("selected-route");
 					$(this).svg().addClass("unselected-route")
 				});
-				
 				
 				_item.svg().removeClass("unselected-route");
 				_item.svg().addClass("selected-route");
@@ -192,11 +183,16 @@ function initRoutes(){
 	
 	var _route13stops = $('.route13stop');
 	_route13stops.each(function(){
-		$(this).click(function(){
-			var _item = $(this);
-			
-			processMinorStop(_item.attr("id"));
-		})
+		$(this).hover(
+			function(){
+				var _item = $(this);
+				processMinorStop(_item.attr("id"));
+			},
+			function(){
+				$('#minor-name').html('');
+				$('#content').html('');
+			}
+		)
 	});
 }
 
