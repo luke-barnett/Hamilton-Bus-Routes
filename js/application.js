@@ -91,11 +91,13 @@ var numPlusKey = 107;
 var numMinusKey = 109;
 
 //Panning and zooming constants
-var currentZoomLevel = 1;
+var currentZoomLevel;
+var defaultZoomLevel; //Calculate in initSvgVars() at runtime.
 var defaultPan = 20;
 var defaultZoomIn = 0.8;
 var defaultZoomOut = 1.25; //Because 1/0.8 = 1.25. Need both of these to be whole fractions so we dont loose precision.
 var defaultViewBoxValue = '50 80 900 1100';
+var zoomToBoundingBoxEnabled = true;
 
 //Mouse panning global vars
 var lastMouseEvent = null;
@@ -137,6 +139,8 @@ function processRoute(itemId){
 	if(itemId == "route-13"){
 		$("#route13stops").attr("display","all");
 	}
+	
+	zoomToBoundingBox(itemId);
 }
 
 function processStop(itemId){
@@ -155,7 +159,6 @@ function processStop(itemId){
 	});
 	
 	$('#content').html(nextArrivals);
-	
 }
 
 function processMinorStop(itemId){
@@ -224,7 +227,6 @@ function initStops(){
 				_item.svg().addClass("selected-stop");
 				processStop(_item.attr("id"));
 			}
-			
 		});
 	});
 }
@@ -233,6 +235,8 @@ function initSvgVars(){
 	//Set a global variable to point to the svg map.
 	svgMapElement = $('#svg-map')[0];
 	svgMapElement.setAttribute('viewBox', defaultViewBoxValue);
+	defaultZoomLevel = parseFloat(defaultViewBoxValue.split(' ')[2]) / svgMapElement.getBBox().width;
+	currentZoomLevel = defaultZoomLevel;
 }
 
 function initKeyboardListener(){
@@ -280,7 +284,7 @@ function zoom(step){
 	viewBoxValues[3] = newHeight;
 
 	//Set the attribute to the new values
-      	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+  svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
 }
 
 function pan(xStep, yStep){
@@ -299,9 +303,34 @@ function pan(xStep, yStep){
 	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
 }
 
+function zoomToBoundingBox(itemId){
+	if(!zoomToBoundingBoxEnabled){
+		return;
+	}
+	
+	//Get the svg line from the id, then get the bounding box
+	var boundingBox = $('#' + itemId)[0].getBBox();
+
+	//Nothing wrong with a bit o padding
+	var boudingBoxPadding = 50;
+	
+	//Store the zoom level. This is used for mouse panning.
+	currentZoomLevel = (boundingBox.width + (2 * boudingBoxPadding)) / svgMapElement.getBBox().width;
+
+	//Set the new viewBox to be slightly large than the bounding box
+	var viewBoxValues = new Array();
+	viewBoxValues[0] = boundingBox.x - boudingBoxPadding;
+	viewBoxValues[1] = boundingBox.y - boudingBoxPadding;
+	viewBoxValues[2] = boundingBox.width + (2 * boudingBoxPadding);
+	viewBoxValues[3] = boundingBox.height + (2 * boudingBoxPadding);
+
+	//Set the attribute to the new values
+  svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+}
+
 function resetPanZoom(){
 	svgMapElement.setAttribute('viewBox', defaultViewBoxValue);
-	currentZoomLevel = 1;
+	currentZoomLevel = defaultZoomLevel;
 }
 
 function handleKeyEvent(evt){
@@ -325,7 +354,7 @@ function handleKeyEvent(evt){
 			return false;
 		break;
 		case downArrowKey:
-      			pan(0, defaultPan);
+			pan(0, defaultPan);
 			evt.preventDefault();
 			return false;
 		break;   
