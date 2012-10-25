@@ -91,9 +91,14 @@ var numPlusKey = 107;
 var numMinusKey = 109;
 
 //Panning and zooming constants
+var currentZoomLevel = 1;
 var defaultPan = 20;
 var defaultZoomIn = 0.8;
-var defaultZoomOut = 1.2;
+var defaultZoomOut = 1.25; //Because 1/0.8 = 1.25. Need both of these to be whole fractions so we dont loose precision.
+
+//Mouse panning global vars
+var lastMouseEvent;
+var mouseCurrentlyPanning = false;
 
 function reset(){
 	console.log("reset");
@@ -229,10 +234,26 @@ function initKeyboardListener(){
 }
 
 function initMouseListener(){
-
+	//Add listeners for mouse wheel
+	if(navigator.userAgent.toLowerCase().indexOf('webkit') >= 0){
+		//Chrome/Safari
+		window.addEventListener('mousewheel', handleMouseWheelEvent, false); 
+	}
+	else{
+		//Others
+		window.addEventListener('DOMMouseScroll', handleMouseWheelEvent, false); 
+	}
+	
+	//Add listeners for mouse up/down/move
+	svgMapElement.addEventListener('mouseup', handleMouseUpEvent, false);
+	svgMapElement.addEventListener('mousedown', handleMouseDownEvent, false);
+	svgMapElement.addEventListener('mousemove', handleMouseMoveEvent, false);
 }
 
 function zoom(step){
+	//Store the zoom level. This is used for mouse panning.
+	currentZoomLevel *= step;
+
 	//Get the viewbox values
 	var viewBoxValues = svgMapElement.getAttribute('viewBox').split(' ');
 
@@ -265,12 +286,15 @@ function pan(xStep, yStep){
 
 	viewBoxValues[0] = x + xStep;
 	viewBoxValues[1] = y + yStep;
+	//console.log("ViewBox X: " + viewBoxValues[0] + ". ViewBox Y: " + viewBoxValues[1]);
 
 	//Set the attribute to the new values
 	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
 }
 
 function handleKeyEvent(evt){
+	//console.log(evt.keyCode);	
+
 	switch (evt.keyCode)
 	{
 		case leftArrowKey:
@@ -308,8 +332,50 @@ function handleKeyEvent(evt){
 			return false;
 		break;
 	}
+}
+
+function handleMouseWheelEvent(evt) {
+	//console.log("Mouse X: " + evt.clientX + ". Mouse Y: " + evt.clientY);
+	var delta;
+
+	//Normalise the zoom level. TODO: use this value to control zoom amount.
+	if(evt.wheelDelta){
+		//Chrome/Safari
+		delta = evt.wheelDelta / 3600; 
+	}
+	else{
+		//Mozilla
+		delta = evt.detail / -90;
+	}
+
+	evt.preventDefault();
+	zoom(delta > 0 ? defaultZoomIn : defaultZoomOut);
+
+	return false;
+}
+
+function handleMouseMoveEvent(evt) {
+	//console.log('Mouse move');
+	if(mouseCurrentlyPanning){
+		//Calculate the differnce in pixels since the last move event, then multiply by the zoom level to scale to the viewBox
+		var xDiff = (lastMouseEvent.clientX - evt.clientX) * currentZoomLevel;
+		var yDiff = (lastMouseEvent.clientY - evt.clientY) * currentZoomLevel;
 	
-	//console.log(evt.keyCode);	
+		pan(xDiff,yDiff);
+		lastMouseEvent = evt;
+	}
+}
+
+function handleMouseDownEvent(evt) {
+	//console.log('Mouse down');
+	lastMouseEvent = evt;
+	mouseCurrentlyPanning = true;
+}
+
+function handleMouseUpEvent(evt) {
+	//console.log('Mouse up');
+	lastMouseEvent = null;
+	mouseCurrentlyPanning = false;
 }
 
 $(document).ready(function() {
