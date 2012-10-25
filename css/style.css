@@ -40,3 +40,7 @@ svg {
 .route:hover {
 	stroke-width:8;
 }
+
+.unselected-route {
+	opacity: 0.2;
+}
