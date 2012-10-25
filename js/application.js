@@ -156,7 +156,9 @@ function processMinorStop(itemId){
 	var _sidebar = $("#sidebar");
 
 	_sidebar.empty();
-	_sidebar.append($("<h1>").append(_item.name));
+	_sidebar.append($("<h1>").append("Route 13"));
+	_sidebar.append($("<h3>").append(_item.name));
+	_sidebar.append($("<p>").append("Next arrival in 15mins (5:37pm)"));
 }
 
 function initRoutes(){
