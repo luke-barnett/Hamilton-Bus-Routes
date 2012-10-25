@@ -94,6 +94,7 @@ function resetRoutes(){
 		_item.svg().removeClass("unselected-route");
 		_item.svg().removeClass("selected-route");
 	});
+	$("#route13stops").attr("display","none");
 }
 
 function resetStops(){
@@ -112,6 +113,10 @@ function processRoute(itemId){
 
 	_sidebar.empty();
 	_sidebar.append($("<h1>").append(_item.name));
+	
+	if(itemId == "route-13"){
+		$("#route13stops").attr("display","all");
+	}
 }
 
 function processStop(itemId){
@@ -148,12 +153,13 @@ function initRoutes(){
 			if(_item.svg().hasClass("selected-route")){
 				reset();
 			}else{
+				reset();
 				_routes.each(function(){
 					$(this).svg().removeClass("selected-route");
 					$(this).svg().addClass("unselected-route")
 				});
 				
-				resetStops();
+				
 				_item.svg().removeClass("unselected-route");
 				_item.svg().addClass("selected-route");
 				processRoute(_item.attr("id"));
@@ -239,7 +245,7 @@ function pan(xStep, yStep){
 	viewBoxValues[1] = y + yStep;
 
 	//Set the attribute to the new values
-      	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
 }
 
 $(document).ready(function() {

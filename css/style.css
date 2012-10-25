@@ -1,8 +1,6 @@
 #control-wrapper {
 	width: 100px;
 	height: 100px;
-	float: left;
-	background-color: red;
 }
 
 #control-wrapper button {
@@ -40,4 +38,8 @@ svg {
 
 .route:hover {
 	stroke-width:8;
+}
+
+.unselected-route {
+	opacity: 0.2;
 }
