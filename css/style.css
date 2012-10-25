@@ -1,8 +1,6 @@
 #control-wrapper {
 	width: 100px;
 	height: 100px;
-	position: absolute;
-	background-color: red;
 }
 
 #control-wrapper button {

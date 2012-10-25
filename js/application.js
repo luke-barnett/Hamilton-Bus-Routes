@@ -239,7 +239,7 @@ function pan(xStep, yStep){
 	viewBoxValues[1] = y + yStep;
 
 	//Set the attribute to the new values
-      	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
 }
 
 $(document).ready(function() {
