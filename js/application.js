@@ -207,7 +207,7 @@ function initStops(){
 function initSvgVars(){
 	//Set a global variable to point to the svg map.
 	svgMapElement = $('#svg-map')[0];
-	svgMapElement.setAttribute('viewBox', '0 0 300 300');
+	svgMapElement.setAttribute('viewBox', '0 0 900 1100');
 }
 
 function initKeyboardListener(){
@@ -223,19 +223,19 @@ function zoom(step){
 	var viewBoxValues = svgMapElement.getAttribute('viewBox').split(' ');
 
 	//Get the width and height of the viewbox as floats
+	var x = parseFloat(viewBoxValues[0]);		
+	var y = parseFloat(viewBoxValues[1]);
 	var width = parseFloat(viewBoxValues[2]);		
 	var height = parseFloat(viewBoxValues[3]);
+	
+	//Calculate the new width and height
+	var newWidth = width * step;
+	var newHeight = height * step;
 
-	var value = Math.abs(step);
-
-	if(step < 0){
-		viewBoxValues[2] = width * value;
-		viewBoxValues[3] = height * value;
-	} 
-	else{
-		viewBoxValues[2] = width / value;
-		viewBoxValues[3] = height / value;
-	}
+	viewBoxValues[0] = x + ((width - newWidth) / 2);
+	viewBoxValues[1] = y + ((height - newHeight) / 2);
+	viewBoxValues[2] = newWidth;
+	viewBoxValues[3] = newHeight;
 
 	//Set the attribute to the new values
       	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
