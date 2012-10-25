@@ -39,43 +39,43 @@ var route13Stops =
 
 var stopDetails =
 [
-{"id":"stop-01","name":"Stop 1"},
-{"id":"stop-02","name":"Stop 2"},
-{"id":"stop-03","name":"Stop 3"},
-{"id":"stop-04","name":"Stop 4"},
-{"id":"stop-05","name":"Stop 5"},
-{"id":"stop-06","name":"Stop 6"},
-{"id":"stop-07","name":"Stop 7"},
-{"id":"stop-08","name":"Stop 8"},
-{"id":"stop-09","name":"Stop 9"},
-{"id":"stop-10","name":"Stop 10"},
-{"id":"stop-11","name":"Stop 11"},
+{"id":"stop-01","name":"Hamilton Zoo"},
+{"id":"stop-02","name":"Wintec Avalon Drive"},
+{"id":"stop-03","name":"The Base"},
+{"id":"stop-04","name":"Route 1 End"},
+{"id":"stop-05","name":"Rototuna Shops"},
+{"id":"stop-06","name":"Grandview Mall"},
+{"id":"stop-07","name":"Maeroa Intermediate"},
+{"id":"stop-08","name":"PIZZA"},
+{"id":"stop-09","name":"Flagstaff Shops"},
+{"id":"stop-10","name":"Chartwell Shops"},
+{"id":"stop-11","name":"Route 8 End"},
 {"id":"stop-12","name":"Transport Centre"},
-{"id":"stop-13","name":"Stop 13"},
-{"id":"stop-14","name":"Stop 14"},
-{"id":"stop-15","name":"Stop 15"},
+{"id":"stop-13","name":"Fairfield High School"},
+{"id":"stop-14","name":"St. Pauls"},
+{"id":"stop-15","name":"Fairview Downs"},
 {"id":"stop-16","name":"Stop 16"},
-{"id":"stop-17","name":"Stop 17"},
-{"id":"stop-18","name":"Stop 18"},
-{"id":"stop-19","name":"Stop 19"},
-{"id":"stop-20","name":"Stop 20"},
-{"id":"stop-21","name":"Stop 21"},
-{"id":"stop-22","name":"Stop 22"},
-{"id":"stop-23","name":"Stop 23"},
-{"id":"stop-24","name":"Stop 24"},
-{"id":"stop-25","name":"Stop 25"},
-{"id":"stop-26","name":"Stop 26"},
-{"id":"stop-27","name":"Stop 27"},
+{"id":"stop-17","name":"Frankton"},
+{"id":"stop-18","name":"Claudelands"},
+{"id":"stop-19","name":"Wintec"},
+{"id":"stop-20","name":"Hamilton Boys High School"},
+{"id":"stop-21","name":"Fraser High School"},
+{"id":"stop-22","name":"Aberdeen Primary"},
+{"id":"stop-23","name":"Frankton Primary"},
+{"id":"stop-24","name":"Hamilton Police Station"},
+{"id":"stop-25","name":"Sacret Heart High School"},
+{"id":"stop-26","name":"Dinsdale Shops"},
+{"id":"stop-27","name":"Hospital"},
 {"id":"stop-28","name":"Stop 28"},
-{"id":"stop-29","name":"Stop 29"},
-{"id":"stop-30","name":"Stop 30"},
-{"id":"stop-31","name":"Stop 31"},
-{"id":"stop-32","name":"Stop 32"},
-{"id":"stop-33","name":"Stop 33"},
-{"id":"stop-34","name":"Stop 34"},
-{"id":"stop-35","name":"Stop 35"},
-{"id":"stop-36","name":"Stop 36"},
-{"id":"stop-37","name":"Stop 37"}
+{"id":"stop-29","name":"Hamilton Gardens"},
+{"id":"stop-30","name":"University of Waikato"},
+{"id":"stop-31","name":"Silverdale Shops"},
+{"id":"stop-32","name":"Melville High School"},
+{"id":"stop-33","name":"Fitzroy Park"},
+{"id":"stop-34","name":"Silverdale Shops"},
+{"id":"stop-35","name":"Glenview Shopping Centre"},
+{"id":"stop-36","name":"Morrinsville Road"},
+{"id":"stop-37","name":"Route 6 End"}
 ]
 
 //KeyCode Constants
@@ -161,7 +161,9 @@ function processMinorStop(itemId){
 	var _sidebar = $("#sidebar");
 
 	_sidebar.empty();
-	_sidebar.append($("<h1>").append(_item.name));
+	_sidebar.append($("<h1>").append("Route 13"));
+	_sidebar.append($("<h3>").append(_item.name));
+	_sidebar.append($("<p>").append("Next arrival in 15mins (5:37pm)"));
 }
 
 function initRoutes(){
