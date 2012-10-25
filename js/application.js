@@ -78,6 +78,23 @@ var stopDetails =
 {"id":"stop-37","name":"Stop 37"}
 ]
 
+//KeyCode Constants
+var leftArrowKey = 37;
+var upArrowKey = 38;
+var rightArrowKey = 39;
+var downArrowKey = 40;
+var pageUpKey = 33;
+var pageDownKey = 34;
+var plusKey = 187;
+var minusKey = 189;
+var numPlusKey = 107;
+var numMinusKey = 109;
+
+//Panning and zooming constants
+var defaultPan = 20;
+var defaultZoomIn = 0.8;
+var defaultZoomOut = 1.2;
+
 function reset(){
 	console.log("reset");
 	$("#sidebar").empty();
@@ -177,10 +194,6 @@ function initRoutes(){
 	});
 }
 
-function panVertical(upDirection){
-	var svg = $("map");
-}
-
 function initStops(){
 	var _stops = $('.stop');
 	_stops.each(function(){
@@ -211,7 +224,8 @@ function initSvgVars(){
 }
 
 function initKeyboardListener(){
-
+	window.addEventListener('keydown', handleKeyEvent, false);
+	svgMapElement.addEventListener('keydown', handleKeyEvent, false);
 }
 
 function initMouseListener(){
@@ -254,6 +268,48 @@ function pan(xStep, yStep){
 
 	//Set the attribute to the new values
 	svgMapElement.setAttribute('viewBox', viewBoxValues.join(' '));
+}
+
+function handleKeyEvent(evt){
+	switch (evt.keyCode)
+	{
+		case leftArrowKey:
+			pan(-1 * defaultPan,0);
+			evt.preventDefault();
+			return false;
+		break;
+		case rightArrowKey:
+			pan(defaultPan,0);
+			evt.preventDefault();
+			return false;
+		break;
+		case upArrowKey:
+			pan(0, -1 * defaultPan);
+			evt.preventDefault();
+			return false;
+		break;
+		case downArrowKey:
+      			pan(0, defaultPan);
+			evt.preventDefault();
+			return false;
+		break;   
+		case pageUpKey:
+		case plusKey:
+		case numPlusKey:                      
+			zoom(defaultZoomIn);
+			evt.preventDefault();
+			return false;
+		break;
+		case pageDownKey:
+		case minusKey:
+		case numMinusKey:                      
+			zoom(defaultZoomOut);
+			evt.preventDefault();
+			return false;
+		break;
+	}
+	
+	//console.log(evt.keyCode);	
 }
 
 $(document).ready(function() {
