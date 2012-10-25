@@ -37,21 +37,32 @@
 	
 svg {
 	/*border: 1px solid;*/
-	cursor: pointer;
 }
 
 .stop {
 	stroke-width:4;
 	stroke:black;
+	cursor: pointer;
 }
 
 .stop:hover, .selected-stop {
 	stroke:red;
 }
 
+.minor-stop {
+  stroke-width:2;
+	stroke:black;
+	cursor: pointer;
+}
+
+.minor-stop:hover {
+	stroke:red;
+}
+
 .route {
 	fill:none;
 	stroke-width:4;
+	cursor: pointer;
 }
 
 .route:hover {
