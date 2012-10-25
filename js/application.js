@@ -131,9 +131,8 @@ function processStop(itemId){
 	_sidebar.append($("<h1>").append(_item.name));
 }
 
-function processStop(itemId){
-	console.log(itemId);
-	var _item = $.grep(stopDetails, function(obj){
+function processMinorStop(itemId){
+	var _item = $.grep(route13Stops, function(obj){
 		return obj.id === itemId;
 	})[0];
 
@@ -166,6 +165,15 @@ function initRoutes(){
 
 			}
 		});
+	});
+	
+	var _route13stops = $('.route13stop');
+	_route13stops.each(function(){
+		$(this).click(function(){
+			var _item = $(this);
+			
+			processMinorStop(_item.attr("id"));
+		})
 	});
 }
 
